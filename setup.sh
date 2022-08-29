@@ -35,7 +35,7 @@ install() {
   wget https://github.com/threat9/routersploit/archive/3fd394637f5566c4cf6369eecae08c4d27f93cda.tar.gz -O $APM_TMP_DIR/routersploit.tar.gz
   tar xf $APM_TMP_DIR/routersploit.tar.gz -C $APM_PKG_INSTALL_DIR
   rm $APM_TMP_DIR/routersploit.tar.gz
-  mv $APM_PKG_INSTALL_DIR/routersploit-3fd394637f5566c4cf6369eecae08c4d27f93cda mv $APM_PKG_INSTALL_DIR/routersploit
+  mv $APM_PKG_INSTALL_DIR/routersploit-3fd394637f5566c4cf6369eecae08c4d27f93cda $APM_PKG_INSTALL_DIR/routersploit
 
   $APM_PKG_INSTALL_DIR/python/bin/pip3.9 install -r $APM_PKG_INSTALL_DIR/routersploit/requirements.txt
   (cd $APM_PKG_INSTALL_DIR/routersploit && $APM_PKG_INSTALL_DIR/python/bin/python3.9 setup.py install)
