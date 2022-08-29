@@ -41,6 +41,7 @@ install() {
   (cd $APM_PKG_INSTALL_DIR/routersploit && $APM_PKG_INSTALL_DIR/python/bin/python3.9 setup.py install)
 
   ln -s $APM_PKG_INSTALL_DIR/python/bin/rsf.py $APM_PKG_BIN_DIR/
+  echo "This package adds the command rsf.py"
 }
 
 uninstall() {
